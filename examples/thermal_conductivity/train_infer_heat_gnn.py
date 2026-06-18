@@ -669,7 +669,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=str(DATA_DIR / "outputs" / "loss_history.svg"),
     )
     train.add_argument("--device", default="auto", help="auto, cpu, cuda, or cuda:0")
-    train.add_argument("--epochs", type=int, default=20000)
+    train.add_argument("--epochs", type=int, default=5000)
     train.add_argument("--batch-size", type=int, default=16)
     train.add_argument(
         "--training-mode",
